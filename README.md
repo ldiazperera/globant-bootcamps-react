@@ -25,7 +25,7 @@ _That said..._
 
 ![Workout](assets/workout.gif)
 
-Please, use this repository as a base for all your work. The idea is to
+__Important:__ Please, use this repository as a base for all your work. The idea is to
 fork this project so everyone uses the same folder structure for the
 exercises.
 
@@ -51,22 +51,22 @@ exercises.
 
 10. [Learning Days](#learning-days)
 
-  - 10.1 [Week 1: HTML, CSS and Javascript](#week-1-html-css-and-javascript)
-  - 10.2 [Week 2: Diving into JavaScript and Node 101](#week-2-diving-into-javascript-and-node-101)
-  - 10.3 [Week 3: TypeScript and Angular 101](#week-3-typescript-and-angular-101)
-  - 10.4 [Week 4: Angular 201](#week-4-angular-201)
+  - 10.1 [Week 1: HTML, CSS and Javascript + Basic React concepts, components and JSX](#week-1-html-css-and-javascript-+-basic-react-concepts-components-and-jsx)
+  - 10.2 [Week 2: Diving into React 101](#week-2-diving-into-react-101)
+  - 10.3 [Week 3: Here comes Redux! (and more)](#week-3-here-comes-redux-and-more)
+  - 10.4 [Week 4: React native](#week-4-react-native)
 
 
 ### Objective
 
-We will teach you the basics of Web development using JavaScript and [Single Page Applications](https://medium.com/@NeotericEU/single-page-application-vs-multiple-page-application-2591588efe58) with `React`.
+We will teach you the basics (and a bit further too) of Web development using `React` and `React Native`.
 
 → [index](#index)
 
 ### Who Should Attend
 
-The materials will start at a low level and does not require in depth knowledge
-of the platform in question. Desirable participant profile: trainees and outside
+HTML, CSS and JavaScript materials start at an intermediate level. Basic knowledge of this technologies is required since it will not be part of the course. 
+React and React Native materials will start at a low level and does not require in depth knowledge of the library/framework in question. __Desirable participant profile:__ trainees and outside
 Globant candidates. A basic knowledge on OOP is desired, though.
 
 → [index](#index)
@@ -104,7 +104,7 @@ exercises as wanted.
 
 ### Materials
 
-1. You will need to install [Node.JS](https://nodejs.org/en/) (Version 6) (NVM is strongly recommended - [Unix](https://github.com/creationix/nvm#installation)/[Windows](https://github.com/coreybutler/nvm-windows))
+1. You will need to install [Node.JS](https://nodejs.org/en/) (Version 10) (NVM is strongly recommended - [Unix](https://github.com/creationix/nvm#installation) / [Windows](https://github.com/coreybutler/nvm-windows)
 
 2. The recommended IDE is [Visual Studio Code](https://code.visualstudio.com/). However, you can use any IDE of your preference.
 
@@ -126,8 +126,6 @@ The Bootcamp is organized in the following way:
 
 ![Calendar](assets/calendar-new.png)
 
-TBD
-
 The last week will be focused on starting an app and learning some _shiny cool_ stuff. You need to present your work at the end of the week, _however_
 you can keep working on it (more on that later).
 
@@ -146,14 +144,14 @@ You must look for support and guidance from your PM, teammates and tutors.
 
 5. `CSS` code must adhere to Globant's [CSS Style Guide](https://github.com/globant-ui/css-style-guide)
 
-6. `Js` code must adhere to Globant's [Js Style Guide](https://github.com/globant-ui/JavaScript-style-guide).
+6. `JS` code must adhere to Globant's [Js Style Guide](https://github.com/globant-ui/JavaScript-style-guide).
 
 → [index](#index)
 
 ### Learning Days ###
 
 Each day you will grab the fundamentals of building blocks for usual
-`Js/React` applications.
+`JS/React` applications.
 
 On each learning day you will have to:
 
@@ -166,7 +164,7 @@ following practice.
 You will implement the previously gathered knowledge in simple coding activities.
 
 3. **Commit:**
-You will commit all your code on a daily basis, when you finish your practice. This will not apply for code of Week 3 and 4.
+You will commit all your code on a daily basis, when you finish your practice.
 
 → [index](#index)
 
@@ -190,252 +188,322 @@ You will commit all your code on a daily basis, when you finish your practice. T
 
 _Now let's get down to business_
 
-# Week 1: HTML, CSS and JavaScript
+# Week 1: HTML, CSS and Javascript + Basic React concepts, components and JSX
 
-## Day 0: _At the beginning t wast all HTML & CSS_
+## Chapter 0: _Some ole HTML, CSS and JS_
 
-So, what's _day 0_?
+Whay _chapter 0_?
 
 We as developers know that every structure starts at `0` (any other dev or language that says the contrary is ___WRONG___) so this is the first thing you'll need to master before even trying to fight with the future topics.
 
-### History time
-
-Rumor has it that when the web was a little baby, at the early stages of `web 1.0` all was static and **SOOO** ugly.
-
-You may have encounter one of those exquisite pages:
-
-![Mr x page](assets/mrxPage.jpg)
-
-_YES_ pages looked like that _(and that's a pretty one)_ - all old HTML and CSS
-
-Fortunately people noticed that we needed new tools to create more dynamic and stylish experiences. Technologies have evolved and now we can make gorgeous experiences like [this one](https://feeddart.com/). Regardless, the basics are still the same.
-
-### Let's get on with it
+## Let's get on with it
 
 `HTML` describes the content semantics and structure of a web page. It was designed as a markup language, if you know XML ~~(the ugly father)~~, you could consider HTML as a subset of XML with a predefined semantic _(and soooo much friendly)_.
 
-On the other hand, CSS allows to define the look and feel of the content. It's used to set colors on HTML elements, customize sizes, define the layout of the document content, among others. (e.x. "The following list of elements must be shown as a menu", "The main title of the page should use this particular font", "_make things pretty_").
+On the other hand, `CSS` allows to define the look and feel of the content. It's used to set colors on HTML elements, customize sizes, define the layout of the document content, among others. (e.x. "The following list of elements must be shown as a menu", "The main title of the page should use this particular font", "_make things pretty_").
 
-JavaScript is a programming language that runs in all Web Browsers. Using JavaScript we can create full-fledge web applications (_and some magic_).
+`JavaScript` is a programming language that runs in all Web Browsers. Using JavaScript we can create full-fledge web applications (_and some magic_).
 
 ### Reading:
-- Some other Globbers made this ~~meme-less~~ awesome [HTML & CSS 101](https://github.com/globant-ui/css-lab).
-
-### Exercise:
-So... I'm going to be honest with you, I'm lazy ~~as any dev should~~ and I'm not going to re-invent the weel ~~work extra~~.
-Your first days work is with our friends at [HTML & CSS 101](https://github.com/globant-ui/css-lab).
-Just put all your work under [day0](src/week1/day0)
+- [HTML & CSS 101](https://github.com/globant-ui/css-lab).
+- [JS Values, Types, and Operators](http://eloquentjavascript.net/01_values.html)
+- [JS Program Structure](http://eloquentjavascript.net/02_program_structure.html)
+- [JS Functions](http://eloquentjavascript.net/03_functions.html)
+- [JS Data Structures: Objects and Arrays](http://eloquentjavascript.net/04_data.html)
+- [Objects](http://eloquentjavascript.net/06_object.html)
+- [The Browser](http://eloquentjavascript.net/12_browser.html)
+- [DOM](http://eloquentjavascript.net/13_dom.html)
+- [Events](http://eloquentjavascript.net/14_event.html)
 
 ### ~~Not so~~ Optional Reading
+- [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html#h_GlF1Kuv0JF)
 - [Responsive Design](https://developers.google.com/web/fundamentals/design-and-ux/responsive/)
 - [Web Components](https://www.webcomponents.org/introduction#what-are-web-components)
 - [Why use Web Components](https://medium.com/@gilfink/why-im-betting-on-web-components-and-you-should-think-about-using-them-too-8629396e27a)
 - This is your new best friend, [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). The best responsive-friendly CSS model.
 
-→ [index](#index)
+Have you spent all night going through all those?
 
-## Day 3 - 5: Hello JavaScript
+![Blind Homer](assets/homer.jpeg)
 
-_Yes, I know I missed the other days, but c'mon. I'm giving you space to learn._
+### Now lets dive into some serious JavaScript!
 
-I'm sure you must be an HTML & CSS guru by now, right?
+There are two core JS concepts that we need to understand before we enter the React world.
 
-![This is fine](assets/thisIsFine.gif)
+First, we will talk about the Event Loop. Sounds familiar? If not, you will find out that you have been working with it more than you think! This 5-years-old draw will help us a lot.
 
-So, are you ready for your new challenge? `Js`
+![JS event loop](assets/event_loop.png)
 
-_JavaScript is an event driven programming language that runs in all Web Browsers. Using JavaScript we can create full-fledge web applications._
+Well, it doesn't look like a 5-years-old draw, but it's still pretty helpful!
 
-That's quite a definition, buy our friends at [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html#h_GlF1Kuv0JF) make an even better work.
+If you still have some doubts, check this video! https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=2s
 
-I hope you liked that book, because it's going to stick with us for the rest of this (and next) week.
+The other key concept is: __Promises__
 
-### Reading:
+_What is a promise?_
 
-- [Js Values, Types, and Operators](http://eloquentjavascript.net/01_values.html)
-- [Js Program Structure](http://eloquentjavascript.net/02_program_structure.html)
-- [Js Functions](http://eloquentjavascript.net/03_functions.html)
-- [Js Data Structures: Objects and Arrays](http://eloquentjavascript.net/04_data.html)
+In JavaScript, “[...] A Promise represents an operation that hasn’t completed yet, but is expected in the future.” — [MDN Promise Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
-### Excercise:
+To put it simple, a Promise is an object that holds a value that is promised to be given to you at some point in time. One can retrieve the value a Promise is holding by calling the Promises __then__ method. A promise starts out in the _pending state_, then on success it will be in the _fulfilled state_, or if an error occurs, it will be in the _rejected state_.
 
-I think you noticed by now, but there are a few exercises inside the reading material (awesome, I know). Do them, this is basic `Js` and we need you to have fun with it.
+Great, nice work with the definitions, but why should I use them?
 
-Just put all your work under [day2-5](src/week1/days2-5) once you finished the exercises on page.
+Well, there's a little something called __CALLBACK HELL__ and it looks like this
 
-→ [index](#index)
+![](assets/southpark.gif)
 
-# Week 2: Diving into JavaScript and Node 101
+Nah, seriously, it goes like this
 
-## Day 6: The Secret Life of Objects
+![](assets/callbackHell.png)
 
-![Suspicious](assets/suspicious.gif)
+And now, this is how our code lookes like when we uses promises. It's not only nicer to see, but also to debug.
 
-`Js` is often called an Object oriented language, but actually that isn't 100% true. In `Js`
-we have what's called `Prototipal Inheritance`.
-In this lesson you will learn all about the Prototype, Inheritance, Getters, Setters, Constructors and Polymorfism.
+```
+  let promise = fetch('api/give-me-json');
+  
+  promise.then( (response) => {
+     console.log(response);
+  }, (err) => {
+      console.log(err)
+  });
+});
+```
+Also, you can create your own promise, like: 
 
-### Reading:
+```
+function promiseThatResolvesToTwo() {
+  return new Promise( (resolve, reject) => {
+    setTimeout( () => {
+      resolve(2);
+    }, 2000);
+  });
+}
 
-- [Objects](http://eloquentjavascript.net/06_object.html)
+let promise = promiseThatResolvesToTwo();
 
-### Exercise:
+promise.then((value) => console.log(value));
+```
 
-Look into [`src/week2/day1/index.html`](src/week1/day1/index.html) in there there's an `Animal` class with a talk method. Follow the instructions.
+To fulfill the Promise, we invoke _resolve_ passing in the value that will be passed into the first parameter of the Promise’s _then_ method, when it is called. _Reject_ works similarly except it is for any errors. It is passed either to the 2nd parameter of the Promise’s then method, or the parameter of the Promise’s catch method.
 
-### ~~Not So~~ Optional Reading
-Since ES6 went out we do have a _Class like_ sintax, **HOWEVER** that's [Syntactic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar).
-We still have that ~~hideous~~ beautiful `Prototype` under the hood, so don't get confused.
+We also have Promise.all, which takes in something that is iterable like an Array. This iterable object must contain a list of Promise objects, and returns a Promise which resolves when all of the Promises passed into the method resolve. This allows us to kick off multiple async calls and wait to execute further code until all of the async calls are completed.
 
-- [ES6 Class Sintax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+```
+const p1 = new Promise( function(resolve, reject) {
+  setTimeout( () => {
+    resolve( "2quick" );
+  }, 1000);
+});
 
-→ [index](#index)
+const p2 = new Promise( function(resolve, reject) {
+  setTimeout( () => {
+    resolve( [ 1, 2, 3] );
+  }, 4000);
+});
 
-## Day 7: Going Regular with RegEx (Also, learn how to hunt those bugs)
-One of the most ~~hated~~ used features on any kind of language are Regular Expressions, aka RegEx. Those are **REALLY** powerfull strings (they are more like a really special kind of strings) that allow you to capture any pattern you want on any kind of string. You can make sure all emails accounts end up with `@something.com` or all the names are at most 4 characters long... you get the idea.
+const p3 = Promise.resolve(1337);
 
-Also, you will be learning error handling and some of the finest debugging techniques out there. Or, as I like to call them, **_learn how to properly use your tools_**.
+Promise.all([p1, p2, p3]).then((values) => {
+  // 4 seconds later...
+  // values: ["2quick", [1, 2, 3], 1337]
+  console.log(values);
+});
+```
 
-Read up and catch 'em all
+Well, looks like Promises are good enough and it's a topic already solved by JavaScript, right? __WROOOONG__. We always can do better.
 
-![Catch](assets/catch.gif)
+There's something called _async/await_. This feature is already included in Ecmascript's last draft, and also now available using transpilers such as Babel.
 
-### Reading:
-- [Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
-- [An Introduction to Regular Expressions (Regex) In JavaScript](https://codeburst.io/an-introduction-to-regular-expressions-regex-in-javascript-1d3559e7ac9a)
-- [Errors and debugging](http://eloquentjavascript.net/08_error.html)
+```
+async function tryToFetch() {
+  try {
+    const response = await fetch('/api/data', options);
+    return response.json();
+  } catch(err) {
+    console.log(`An error occured: ${err}`);
+    // Instead of rethrowing the error
+    // Let's return a regular object with no data
+    return { data: [] };
+  }
+}
+tryToFetch().then(data => console.log(data));
+```
 
-### Exercise:
-Look into [`src/week2/day2`](src/week1/day2) in there there're some `index` files, poke around and follow the instructions.
+It looks pretty sync, doesn't it? That's the beauty of this. However, the code above is all async. It also provides a really clean and intuitive way for handling asynchronous errors, because it uses try/catch syntax, which is exactly how regular synchronous JavaScript handles errors.
 
-→ [index](#index)
+Also, you can is it along with Promise! Check this.
 
-## Day 3: The browser, where the _magic_ happens
+```
+// Ideal: This will happen concurrently
+async function parallel() {
+  const promises = [
+    task1(),
+    task2(),
+    task3(),
+  ];
+  const [output1, output2, output3] = await Promise.all(promises);
+  return combineEverything(output1, output2, output3);
+}
+```
 
-So, you have a text file called _whatever.js_, you have ~200 lines in there (or you should, codebases of ~ 1k lines are made by horrible people). You add it to an `index.html` file, double click that file, a browser opens and
+Is there another way to do some async stuff in JS? __GENERATORS__.
 
-![Mindblown](assets/mindblown.gif)
+That's a topic we all should read about, so here is another not so optional reading:
 
-The code comes to life. All works fine (at least if you coded right :unamused:) it's
+- [Generators 101](https://codeburst.io/understanding-generators-in-es6-javascript-with-examples-6728834016d5)
 
-![Magic](assets/magic.gif)
+### Exercise
+TBD
 
-No, no it's not. It's the browser's engine. `Js` runs inside a browser on a [VM](https://en.wikipedia.org/wiki/JavaScript_engine), that VM could be
-[V8](https://developers.google.com/v8/) (Chrome), [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) (Firefox), [Chakra](https://github.com/Microsoft/ChakraCore) (Edge) or [Nitro](https://developer.apple.com/documentation/javascriptcore) (Safari)
+## Chapter 1: Basic React stuff
 
-For day 3 you will learn about the Browser, the Document Object Model (basically the whole thing you are seeing on the browser's window) and DOM Events.
+![titanic](assets/titanic.jpg)
 
-### Reading:
+After a lot of reading, asking and explaining, we are finally here. So, brief introduction to React.
 
-- [The Browser](http://eloquentjavascript.net/12_browser.html)
-- [DOM](http://eloquentjavascript.net/13_dom.html)
-- [Events](http://eloquentjavascript.net/14_event.html)
+__REACT IS NOT A FRAMEWORK.__
 
-If you used jQuery, this is the time you realize that it's not so magic, it's Js, and you can do all the things jQuery does with vanilla Js. And in a few weeks you'll be refusing to use jQuery again :stuck_out_tongue_closed_eyes:
-
-### ~~Not So~~ Optional Reading
-The browser and the server (the little computer thingy that lives on the cloud and has all your files) communicates via `HTTP`. That's a protocol, something like a standarized way to send messages. You can read more about it here:
-
-- [HTTP](http://eloquentjavascript.net/17_http.html)
-
-Users communicate with the application via `forms`, those are fill up sections which where designed on a time before `Js` where all interactions with the server where made while navigating to a new page. That kind of interaction is **SO** web 1.0 but, we still use `forms`.
-
-- [Forms](http://eloquentjavascript.net/18_forms.html)
-
-- [Design patterns](https://sourcemaking.com/design_patterns), the blueprints to a reliable application.
-
-- [4 JavaScript Design Patterns You Should Know](https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know)
-
-
-### Exercise:
-Look into [`src/week2/day3`](src/week1/day3) in there there're some `index` files, poke around and follow the instructions.
-
-→ [index](#index)
-
-## Day 8 and 9: require('Node.js')
-So, at this point you pretty much are up to speed with `Js`. But `Js` does not only run on a
-browser. **YES** you read me right, you can make a `server`, a `robot`, a `game`, you
-can eve run it on an _Arduino_. The sky's the limit.
-
-![Excited](assets/excited.gif)
-
-How is that even possible you ask? Well, `Js` community was aways **HUGE**, so it was more than expected that a person asked `Why not?`
-That's how [`Node`](https://nodejs.org/en/) was born.
-
-`Node.js` is a `Js` runtime that runs outside the browser on a V8 VM, there's a Node fork for almost everything.
+React is a JavaScript library, that aims to simplify development of visual interfaces. This library divides the UI into a collection of components, with their own interface and state.
 
 ### Reading
-First, to understand how node works, you need to learn one last thing about `Js`, `Modules`
 
-- [Modules](http://eloquentjavascript.net/10_modules.html)
-
-Then you can go on with this
-- [Node](http://eloquentjavascript.net/20_node.html)
-
-After that you can learn about the most popular NodeJS framework:
-- [Express](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction#Introducing_Express)
-
-### ~~Not So~~ Optional Reading
-- [What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
-- [Installing npm packages locally](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)
-- [Using a `package.json`](https://docs.npmjs.com/getting-started/using-a-package.json)
-- [Updating local packages](https://docs.npmjs.com/getting-started/updating-local-packages)
-- [Uninstalling local packages](https://docs.npmjs.com/getting-started/uninstalling-local-packages)
-- [Installing npm packages globally](https://docs.npmjs.com/getting-started/installing-npm-packages-globally)
-- [Updating global packages](https://docs.npmjs.com/getting-started/updating-global-packages)
-- [Uninstalling global packages](https://docs.npmjs.com/getting-started/uninstalling-global-packages)
-- [Semantic versioning and npm](https://docs.npmjs.com/getting-started/semantic-versioning)
-- [How npm works?](https://docs.npmjs.com/how-npm-works/npm3)
-
-### Exercise:
-Look into [`src/week2/day4-5`](src/week1/day4-5) in there there're some `js` files. Those 2 are `Node.js` apps, they don't work as you would expect from any other `.js` file.
-You will need to use the command line:
-```
-luca.sartori@AR-IT12688:~/bootcamps/ui$
-```
-That's your Command Line Interface, know your CLI, love your CLI, **BE** your CLI. A developer is defined by it's tools, and you will want this one on your side.
-
-You'll need to navigate to `src/week1/day4-5`
-```
-luca.sartori@AR-IT12688:~/bootcamps/ui$ cd src/week1/day4-5/
-```
-If you excecute a `ls` command you'll se the contents on the CLI
-```
-luca.sartori@AR-IT12688:~/bootcamps/ui/src/week1/day4-5/$ ls
-
-expressDemo.js  fsDemo.js  node_modules  package.json
-
-```
-Then, you have to run one of the files
-```
-luca.sartori@AR-IT12688:~/bootcamps/ui/src/week1/day4-5/$ node fsDemo.js
-```
-[**Remember, you'll need Node.js installed**](#materials)
-
-That will run the code, just remember two things
-1. Server code, like the one from [expressDemo](/src/week1/day4-5/expressDemo.js) keeps running, you have to exit it
-2. To exit a running process on the CLI, you need to press `CTRL+C`
-
-**Notes:**
-
-Don't be afraid to Google stuff, no developer remembers everything
+- [Immutability](https://flaviocopes.com/react-immutability/)
+- [Purity](https://flaviocopes.com/react-purity/)
+- [Composition](https://flaviocopes.com/react-composition/)
+- [Virtual DOM](https://flaviocopes.com/react-virtual-dom/)
 
 → [index](#index)
 
-# Week 3:
+### Exercise
+TBD
+
+# Week 2: Diving into React 101
+
+## Chapter 2: We are going deeper
+
+![Lisa](assets/lisa.gif)
+
+I'm sure that some words mentioned in the reading stuff made no sense or didn't ring any bell. Don't worry, we will cover them in a sec. The fun is about to start!
+
+### Reading
+
+- [State](https://flaviocopes.com/react-state/)
+- [Props](https://flaviocopes.com/react-props/)
+- [Presentational vs container components](https://flaviocopes.com/react-presentational-vs-container-components/)
+- [State vs Props](https://flaviocopes.com/react-state-vs-props/)
+- [HOC](https://flaviocopes.com/react-higher-order-components/)
+- [JSX](https://codeburst.io/understanding-jsx-9bfcdc7fe01b)
+
+### Exercise:
+
 TBD
 
 → [index](#index)
 
-# Week 4
+## Chapter 3: Moving stuff around
+
+![Move](assets/move.gif)
+
+Well, so far we've talked about some basic concepts, most of them related to components. But there are two things we haven't talked about yet: how to organize and communicate all this stuff. 
+
+We can't leave them 'floating', so let's do some magic.
+
+### Reading:
+- [Render props](https://medium.com/rayn-studios/understanding-render-props-in-react-7cf43a0f91fa)
+- [React router](https://flaviocopes.com/react-router/)
+- [Fragment](https://codeburst.io/fragment-in-react-1cd69f158910)
+- [Unidirectional data flow](https://medium.com/@lizdenhup/understanding-unidirectional-data-flow-in-react-3e3524c09d8e)
+- [Flux Arch](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
+
+### Exercise:
+TBD
+
+→ [index](#index)
+
+## Chapter 4: Cycle of life
+
+![cycle](assets/cycle.gif)
+
+As life itself, react components have a lifecycle. And in each cycle we have access to different methods that can be called, allowing us to update the UI and app states.
+Also, we will see how React handles events and the DOM reference.
+
+### Reading:
+
+- [Lifecyle](https://medium.com/@joshuablankenshipnola/react-component-lifecycle-events-cb77e670a093)
+- [Events](https://medium.freecodecamp.org/the-best-way-to-bind-event-handlers-in-react-282db2cf1530)
+- [Refs](https://hackernoon.com/refs-in-react-all-you-need-to-know-fb9c9e2aeb81)
+- [Form](https://medium.com/@agoiabeladeyemi/the-complete-guide-to-forms-in-react-d2ba93f32825)
+
+### Exercise:
+TBD
+
+→ [index](#index)
+
+# Week 3: Here comes Redux! (and more)
+
+## Chapter 4: Improving what we have
+
+![johnny](assets/johnny.gif)
+
+I'm sure that you've heard about this A LOT. But since we are UI devs, we get overwhelmed by the amount of new techonolgies and frameworks that came across almost every day and it's hard to keep updated.
+
+If that's the case, don't worry, you will learn all you need to know about.
+
+Redux is another library, that is usually tied up to React, but it can be used with any other JS view library.
+
+### What is it for?
+ It's a state manager. But why do we need it? Well, if you remember what we've been talking about state and props, you could notice that, in small apps, you could move your state up in the tree and then use props in some cases.
+
+In more complex apps, you will be forced for sure to move all the state up, not in some cases.
+
+So, here comes Redux! It provides a way to manage an application state, and move it to an external global store.
+
+Also, in version 16.3 React introduced ___Context API___, making Redux redundant. If you work with this version of the library or higher, avoid using Redux and use Context API.
+
+### Reading
+- [Redux](https://flaviocopes.com/redux/)
+- [Redux-Thunk](https://medium.com/@gethylgeorge/understanding-how-redux-thunk-works-72de3bdebc50)
+
+### Exercise:
+TBD
+
+→ [index](#index)
+
+## Chapter 5: Code once
+
+![Bruce](assets/bruce.gif)
+
+
+There's no point in reinventing the wheel, and also in coding the same things over and over. For example, just imagine having to run a bunch of commands every time you want to start a development server to work locally; or all what have to do each time you make a release.
+
+We developers are ~~lazy~~ clever, that's why we have tools to do all this things just once, and sometimes we get them done already changing just some pieces of code.
+
+Last but not least, we will have to cover some testing concepts. That's why we will use a framework called `Jest`
+
+### Reading
+- [Webpack](https://blog.andrewray.me/webpack-when-to-use-and-why/)
+- [Babel](https://medium.com/the-web-tub/trying-out-javascript-es6-using-babel-7dbd4de95835)
+- [Webpack + Babel](https://medium.com/oredi/webpack-with-babel-7-b61f7caa9565)
+https://github.com/facebook/create-react-app
+- [Create-react-app](https://github.com/facebook/create-react-app)
+- [Jest](https://medium.com/@liran.tal/reasons-to-love-jest-the-test-framework-ae19b49c02c3)
+
+### Not so optional reading
+- [Quick build app](https://medium.com/@tkssharma/quickly-build-react-app-using-create-react-app-e55d7eb5572d)
+- [React + Jest](https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675)
+- [Jest examples](https://medium.freecodecamp.org/a-quick-introduction-to-test-driven-development-with-jest-cac71cb94e50)
+
+# Week 4: React native
+
+### Exercise:
+TBD
+
+→ [index](#index)
+
+# Week 5
 TDB
 
 ### Exercise:
-
-![Show Me What You Got](assets/SMWYG.gif)
-
-#### _It's time to make an app from scratch_
-
 TBD
 
 **_Hey, don't panic. This excercise is for this week and on..._**
