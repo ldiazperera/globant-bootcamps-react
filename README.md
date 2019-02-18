@@ -558,7 +558,7 @@ You can find detailed instructions on using _Create React App_ and many tips in 
 - [Native Components](https://facebook.github.io/react-native/docs/components-and-apis)
 - [Platform specific code](https://facebook.github.io/react-native/docs/platform-specific-code)
 
-###Extra
+### Extra
 
 - [What is react native and why is it used?](https://medium.com/@thinkwik/react-native-what-is-it-and-why-is-it-used-b132c3581df)
 - [Navigation](https://reactnavigation.org/docs/en/getting-started.html)
