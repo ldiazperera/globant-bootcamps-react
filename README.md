@@ -495,6 +495,78 @@ https://github.com/facebook/create-react-app
 
 # Week 4: React native
 
+![react native](assets/native.gif)
+
+Did you think that you had reached the end? Let's go get a snack and have fun :wink:
+
+### How React Native works?
+
+React Native lets you build mobile apps using JavaScript. It’s based on React, but instead of targeting the browser, it targets mobile platforms. In other words: you don't build a _mobile web app_, an _HTML5 app_, or a _hybrid app_. You build a real mobile app that's indistinguishable from an app built using Objective-C.
+
+Plus, because most of the code you write can be shared between platforms, React Native makes it easy to simultaneously develop for both Android and iOS.
+
+The focus of React Native is on developer efficiency across all the platforms you care about
+
+`Learn once, write anywhere.`
+
+### Get started in seconds
+
+Are you still bored? Here we go! You’ll need to have **Node 8.10.0 or later** on your local development machine (but it’s not required on the server).
+
+You don’t need to install or configure tools like Webpack or Babel. They are preconfigured and hidden so that you can focus on the code.
+
+Just create a project, and you’re good to go.
+
+To create a new app, you may choose one of the following methods: `npx`, `npm` or `yarn`. It will create a directory called **name-app** inside the current folder.
+
+Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+
+```
+name-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    └── serviceWorker.js
+```
+No configuration or complicated folder structures, just the files you need to build your app.
+
+Inside the newly created project, you can run some built-in commands like: `npm start` or `yarn start`.
+
+**Reminder**: Runs the app in development mode.
+
+You can find detailed instructions on using _Create React App_ and many tips in its [documentation](https://facebook.github.io/create-react-app/).
+
+
+### Reading
+
+- [Create React Native app](https://facebook.github.io/react-native/docs/getting-started.html)
+- [New App](https://github.com/facebook/create-react-app#creating-an-app)
+- [Roadmap](https://facebook.github.io/react-native/blog/2018/11/01/oss-roadmap)
+- [JS Thread](https://facebook.github.io/react-native/docs/performance#js-frame-rate-javascript-thread)
+- [Native Components](https://facebook.github.io/react-native/docs/components-and-apis)
+- [Platform specific code](https://facebook.github.io/react-native/docs/platform-specific-code)
+
+###Extra
+
+- [What is react native and why is it used?](https://medium.com/@thinkwik/react-native-what-is-it-and-why-is-it-used-b132c3581df)
+- [Navigation](https://reactnavigation.org/docs/en/getting-started.html)
+- [Main difference between ReactJS and React Native](https://www.quora.com/Whats-the-main-difference-between-ReactJS-and-React-Native)
+- [Integration with Existing Apps](https://facebook.github.io/react-native/docs/integration-with-existing-apps.html)
+- [Running on device](https://facebook.github.io/react-native/docs/running-on-device)
+
+
 ### Exercise:
 TBD
 
