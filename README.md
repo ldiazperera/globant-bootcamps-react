@@ -375,7 +375,7 @@ React is a JavaScript library, that aims to simplify development of visual inter
 → [index](#index)
 
 ### Exercise
-TBD
+* Create a Car component to some car information.
 
 # Week 2: Diving into React 101
 
@@ -396,7 +396,7 @@ I'm sure that some words mentioned in the reading stuff made no sense or didn't 
 
 ### Exercise:
 
-TBD
+* Add a button to buy a car. Also, below the car information you have to display a label saying "You have X cars", incrementing the value of X everytime you hit the buy button.
 
 → [index](#index)
 
@@ -416,7 +416,13 @@ We can't leave them 'floating', so let's do some magic.
 - [Flux Arch](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
 
 ### Exercise:
-TBD
+
+* Lets refactor the Car component. We will create two new components:
+
+  - CarInfo: this component will recieve all car information from props, and display it.
+  - CarActions: this one will recieve from props the amout of cars owned and the necessary handlers, and it will show: the amount of cars, a buy button (working), and a sell button (also working).
+
+__Note: Car component must not be deleted.__
 
 → [index](#index)
 
@@ -435,13 +441,23 @@ Also, we will see how React handles events and the DOM reference.
 - [Form](https://medium.com/@agoiabeladeyemi/the-complete-guide-to-forms-in-react-d2ba93f32825)
 
 ### Exercise:
-TBD
+* Refactor Car, CarInfo and CarActions components so now any type of vehicle is accepted. The vehicle name will be taken from props.
+
+__Note:__ Components must be renamed.
+
+* Create a list of vehicles, passing each name via props. Remember to define the Key prop for each list element.
+* Create a Home screen, in which the user will be asked to fill a form. This form has to ask for the username, the amount of money the user has, and if the user already has a vehicle.
+* The user must be redirected after filling the form to the vehicles list.
+
+__Note:__ There will be two routes:
+  - '/': starting route, where the form is.
+  - '/vehicles': vehicle list route
 
 → [index](#index)
 
 # Week 3: Here comes Redux! (and more)
 
-## Chapter 4: Improving what we have
+## Chapter 5: Improving what we have
 
 ![johnny](assets/johnny.gif)
 
@@ -465,11 +481,15 @@ Also, in version 16.3 React introduced ___Context API___, making Redux redundant
 - [Redux-Thunk](https://medium.com/@gethylgeorge/understanding-how-redux-thunk-works-72de3bdebc50)
 
 ### Exercise:
-TBD
+* Make the necesarry code changes to add Redux to your app.
+* Create a HOC to create a component to fetch data.
+* Implementar Redux Thunk
+
+__Note:__ You can use [mockAPI](https://www.mockapi.io/) to create your own API.
 
 → [index](#index)
 
-## Chapter 5: Code once
+## Chapter 6: Code once
 
 ![Bruce](assets/bruce.gif)
 
@@ -495,11 +515,13 @@ https://github.com/facebook/create-react-app
 
 # Week 4: React native
 
+## Chapter 7: I still have a Nokia 1100
+
 ![react native](assets/native.gif)
 
 Did you think that you had reached the end? Let's go get a snack and have fun :wink:
 
-### How React Native works?
+### How does React Native work?
 
 React Native lets you build mobile apps using JavaScript. It’s based on React, but instead of targeting the browser, it targets mobile platforms. In other words: you don't build a _mobile web app_, an _HTML5 app_, or a _hybrid app_. You build a real mobile app that's indistinguishable from an app built using Objective-C.
 
@@ -558,7 +580,7 @@ You can find detailed instructions on using _Create React App_ and many tips in 
 - [Native Components](https://facebook.github.io/react-native/docs/components-and-apis)
 - [Platform specific code](https://facebook.github.io/react-native/docs/platform-specific-code)
 
-### Extra
+### Not so optional reading
 
 - [What is react native and why is it used?](https://medium.com/@thinkwik/react-native-what-is-it-and-why-is-it-used-b132c3581df)
 - [Navigation](https://reactnavigation.org/docs/en/getting-started.html)
@@ -566,30 +588,22 @@ You can find detailed instructions on using _Create React App_ and many tips in 
 - [Integration with Existing Apps](https://facebook.github.io/react-native/docs/integration-with-existing-apps.html)
 - [Running on device](https://facebook.github.io/react-native/docs/running-on-device)
 
-
-### Exercise:
-TBD
-
 → [index](#index)
 
-# Week 5
-TDB
+## Chapter 8: Final
 
 ### Exercise:
-TBD
+
+For this final step, you will have to take the ReactJS app that you've been developing so far and turn it into a React Native app!
 
 **_Hey, don't panic. This excercise is for this week and on..._**
 
 You have until the last day of this week to keep pushing changes. After that you can keep workin on the app, but please create a new branch for it:
 ```
-luca.sartori@AR-IT12688:~/bootcamps/ui/week4$ git checkout -b 'post-bootcamp'
+lucas.diaz@AR-IT09768:~/bootcamps/ui/week4$ git checkout -b 'post-bootcamp'
 
-luca.sartori@AR-IT12688:~/bootcamps/ui/week4$ git push origin post-bootcamp
+lucas.diaz@AR-IT09768:~/bootcamps/ui/week4$ git push origin post-bootcamp
 ```
-
-Your app should look something like this:
-
-TBD
 
 **Some advices**
 - Dont't get scared. Even the most successfull Software Engineers and Architects forget things sometimes.
@@ -606,8 +620,6 @@ Kudos and keep ~~failing~~ learning!
 # BONUS
 
 So... you've got your `React` going, you read a **LOT** of stuff, you started a SPA. So... What's next?
-
-![Homer Scholar](assets/homerSquareRoot.gif)
 
 There're still a lot of stuff to read, some of them really work better under specific conditions or requirements. Remember:
 
